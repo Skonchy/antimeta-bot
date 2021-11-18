@@ -1,0 +1,19 @@
+{
+  "name": "anti-meta-bot",
+  "version": "1.0.0",
+  "description": "A bot to fight against the tyranny of metagaming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Jake Kowa",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "discord.js": "^13.3.1",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.15",
+    "tmi.js": "^1.8.5"
+  }
+}
