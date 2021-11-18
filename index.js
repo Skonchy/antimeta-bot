@@ -65,7 +65,7 @@ async function getViewerList(channel){
     let viewerList = await axios.get(`https://tmi.twitch.tv/group/user/${channel}/chatters`).then( response => {
         let flatViewerList = []
         for(let group in response.data.chatters) {
-            if(response.data.chatters[group].length > 0){
+            if(response.data.chatters[group].length > 0 && group !== 'broadcaster'){
                 for(let user in response.data.chatters[group]){
                     flatViewerList.push(response.data.chatters[group][user])
                 }
